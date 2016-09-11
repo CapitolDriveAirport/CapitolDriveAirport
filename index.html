@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	<html><!--comment-->
+	<html>
 		<head>
 			<title>Capitol Airport 02C</title>
 			<style>
@@ -7,81 +7,120 @@
 					background-color:lightskyblue;
 					vertical-align:top;
 				}
-				
 				h1 {
 					color:forestgreen;
 					margin-top:21px;
 					margin-bottom:30px;
 				}
-				
 				#cameraFeed {
 					width:24%;
 					border:0px dashed green;
 					vertical-align:top;
 					margin-right:7px;
 				}
-				
 				.camera{
 					width:100%;
 				}
-				
 				div{
 					display:inline-block;
 					margin:0px;
 					padding:0px;
 				}
-				
+				p{
+					margin-top:.3em;
+					margin-bottom:.3em;
+				}
 				#content{
 					width:73%;
 					border:0px solid green;
 					vertical-align:top;
 				}
-				
+
 				#body{
 					width:98%;
 				}
-				
 				.content{
-					hheight:100px;
 					width:98%;
 					margin:5px 0px;
 					vertical-align:top;
 				}
-				
 				.rental{
 					width:30%;
 					margin:5px;
 					vertical-align:top;
 				}
-				
 				.contact{
 					padding:0px 50px;
 				}
-				
-				div.hr{
+
+				hr{
 					border-top:1px solid black;
 					width:100%;
-					height:0px;
+					margin:3px 0px;
+					border-style: solid;
+					border-right-style:none;
+					border-left-style:none;
+					border-bottom-style:none;
 				}
-				
+				div.runways{
+					width:100%;
+					display:inline-block;
+					padding:0px;
+					margin:0px;
+				}
+				div.runway{
+					width:32%;
+					display: inline-block;
+					padding:0px;
+					margin:auto;
+				}
+				#runways{
+					width:100%;
+					margin:3px 0px;
+				}
+				table#runways>tbody>tr>td{
+					table-layout:auto;
+					width:33%;
+					padding: .2em 0em;
+				}
+				table#runway>tbody>tr{
+					margin:.7em 0em;
+				}
+				div#news>ul{
+					float:left;
+					margin-top:.6em;
+					margin-bottom:.6em;
+					margin-left:18%;
+				}
+				div#news>ul>li{
+					float:left;
+				}
+				.rentalRatesLeft{
+					text-align: left;
+					width:69%;
+					padding-bottom: 3px;
+				}
+				.rentalRatesRight{
+					text-align:right;
+					width:29%
+				}
 			</style>
 		</head>
 		<body align="center">
 			<header width="90%">
 				<h1 align="center">Capitol Drive Airport</h1>
 			</header>
-			<!--br/-->
 			<div id="body">
 				<div id="cameraFeed">
-					<img class="camera" src="http://capitoldriveairport.com/image1-d.jpg"/><br/>
-					<img class="camera" src="http://capitoldriveairport.com/image2-d.jpg"/><br/>
-					<img class="camera" src="http://capitoldriveairport.com/image3-d.jpg"/><br/>
-					<img class="camera" src="http://capitoldriveairport.com/image4-d.jpg"/><br/>
+					<img class="camera" src="http://capitoldriveairport.com/image1-d.jpg"/>
+					<img class="camera" src="http://capitoldriveairport.com/image2-d.jpg"/>
+					<img class="camera" src="http://capitoldriveairport.com/image3-d.jpg"/>
+					<img class="camera" src="http://capitoldriveairport.com/image4-d.jpg"/>
 				</div>
 				<div id="content">
 					<div id="info-links" class="content">
 						<p>Capitol Drive Airport - 02C is served by Brookfield Aero, LLC an all volunteer FBO.</p>
-						<p>Runway 3/21 (paved) is open. Runway 18/36 (grass) is open. Runway 9/27 (grass) is open.</p>
+						<p>Unicom frequency: 122.7</p>
 						<p>
 							<a href="https://pilotweb.nas.faa.gov/PilotWeb/notamRetrievalByICAOAction.do?method=displayByICAOs&reportType=RAW&formatType=DOMESTIC&retrieveLocId=02C&actionType=notamRetrievalByICAOs">Current NOTAMS</a>
 							&emsp;<a href="http://www.airnav.com/airport/02c">AirNav</a>
@@ -89,19 +128,42 @@
 							&emsp;<a href="http://www.theafd.com/facility/02C">AFD</a>
 							&emsp;<a href="http://vaachapter11.com/">VAA Chapter 11</a>
 						</p>
-					</div>
-					<div class="hr"/>
+					</div><hr/>
 					<div id="runways" class="content">
-						<p>Unicom Frequency 122.7</p>
-						<p>03/21 is paved, 3500ft x 44ft - pilot controlled lighting on 122.7 Mhz, 5 clicks</p>
-						<p>09/27 is turf, 3400ft x 100ft</p>
-						<p>18/36 is turf, 1600ft x 80ft</p>
-					</div>
-					<div class="hr"/>
+						<table id="runways"><tbody>
+							<tr id="state">
+								<td>OPEN</td>
+								<td>OPEN</td>
+								<td>OPEN</td>
+							</tr>
+							<tr id="headings">
+								<td>3/21 (paved)</td>
+								<td>9/27 (turf)</td>
+								<td>18/36 (turf)</td>
+							</tr>
+							<tr id="dimensions">
+								<td>3500x44 ft</td>
+								<td>3400x100 ft</td>
+								<td>1600x80 ft</td>
+							</tr>
+							<tr id="remarks">
+								<td>Pilot activated lighting<br/>122.7 MHz - 5 clicks</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr id="news">
+								<td>Recently repaved</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody></table>
+					</div><hr/>
 					<div id="news" class="content">
-						<p>3/21 pilot controlled lighting is back in service</p>
-					</div>
-					<div class="hr"/>
+						<ul>
+							<li>3/21 pilot controlled lighting is back in service</li><br />
+							<li>3/21 has been repaved</li>
+						</ul>
+					</div><hr/>
 					<div id="rental" class="content">
 						<div id="gas" class="rental">
 							<p><strong>GAS PRICES!</strong></p>
@@ -110,37 +172,36 @@
 						</div>
 						<div id="planes" class="rental">
 							<p>We have pilot training and aircraft rentals now!</p>
-							<p>We have a Cherokee 140, Cessna 150, and an ATC 710.</p>
-							<p>Please contact Ken Reese at 414-378-6022 for more information.</p>
+							<p>Please contact Ken Reese at<br />414-378-6022<br />for more information.</p>
 						</div>
 						<div id="rates" class="rental" height="150px">
-							<table>
+							<table style="margin:auto;"><tbody>
 								<tr>
-									<td>Cessna 150</td>
-									<td>$82/hr</td>
+									<td class="rentalRatesLeft">Cessna 150</td>
+									<td class="rentalRatesRight">$82/hr</td>
 								</tr>
 								<tr>
-									<td>Cherokee 140</td>
-									<td>$__/hr</td>
+									<td class="rentalRatesLeft">Cherokee 140</td>
+									<td class="rentalRatesRight">$__/hr</td>
 								</tr>
 								<tr>
-									<td>ATC 710</td>
-									<td>$__/hr</td>
+									<td class="rentalRatesLeft">ATC 710</td>
+									<td class="rentalRatesRight">$__/hr</td>
 								</tr>
 								<tr>
-									<td>Instructor</td>
-									<td>$35/hr</td>
+									<td class="rentalRatesLeft">Instructor</td>
+									<td class="rentalRatesRight">$35/hr</td>
 								</tr>
-							</table>
+							</tbody></table>
 						</div>
-					</div>
-					<div class="hr"/>
+					</div><hr/>
 					<div id="contact" class="content">
 						<div id="address" class="contact">
 							<p align="left">21500 Gumina Rd</p>
 							<p>Pewaukee, WI 53072</p>
 						</div>
 						<div id="phone" class="contact">
+							<p><a href="https://www.google.com/maps/dir/current+location/Capitol+Airport,+21500+Gumina+Rd,+Pewaukee,+WI+53072/">Google Maps</a></p>
 							<p>Phone: 262-781-4213</p>
 						</div>
 					</div>
