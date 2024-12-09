@@ -1,0 +1,30 @@
+<div class="container justify-content-center">
+    {% comment %} <div class="row  row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"> {% endcomment %}
+    <div class="row">
+        {% for runway in site.data.runways %}
+            <div class="col-sm-4">
+                <div class="card" style="border: none;">
+                     {% comment %} style="margin: 0.5em; border: none;"> {% endcomment %}
+                {% comment %} <img class="card-img-top" src="/assets/images/members/{{  member.image  }}" alt="" width="100%" /> {% endcomment %}
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">{{  runway.heading  }}</h4>
+                    </div>
+                    <div class="card-body pt-2">
+                        {% assign thisrunwaystatus = runway.status | downcase %}
+                        <div class="p-2 mb-2 rounded-3 text-bg-{% case thisrunwaystatus %}{% when 'open' %}success{% when 'closed' %}danger{% else %}warning{% endcase %}">{{ runway.status }}</div>
+                        {% comment %} <h4 class="card-title">{{  runway.heading  }}</h4> {% endcomment %}
+                        {% comment %} <h6 class="card-subtitle mb-2 text-muted">{{ runway.dimensions.length }} x {{ runway.dimensions.width }} ({{ runway.surface }})</h6> {% endcomment %}
+                        {% comment %} <h4 class="card-title">{{  runway.dimensions.length }} x {{ runway.dimensions.width  }}</h4> {% endcomment %}
+                        <h6 class="card-subtitle mb-2 text-muted">{{ runway.dimensions.length }} x {{ runway.dimensions.width }}</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ runway.surface }}</h6>
+                        {% comment %} <h6 class="card-subtitle mb-2 text-muted">{{ runway.dimensions.length }} x {{ runway.dimensions.width }} ({{ runway.surface }})</h6> {% endcomment %}
+                        <h6 class="card-subtitle mb-2 text-muted">{{ runway.description }}</h6>
+                        {% comment %} <p class="card-text">{{  runway.status  }}</p> {% endcomment %}
+                        {% comment %} <button type="button" class="w-100 btn btn-lg btn-primary runway runway-{{ runway.status | downcase }}">{{ runway.status }}</button> {% endcomment %}
+                        {% comment %} TODO FIXME match status {% endcomment %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

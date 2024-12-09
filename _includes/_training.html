@@ -1,0 +1,48 @@
+{% comment %} <section class="mainTip"> {% endcomment %}
+<div class="container-fluid">
+    <div class="row text-center">
+
+        {% comment %} <div class="offset-xl-0 col-xl-3 offset-lg-0 col-lg-3"></div> {% endcomment %}
+
+        {% comment %} <disv class="col-lg-6" style="padding: 0.3em;"> {% endcomment %}
+        {% comment %} <div class="col-md-4"> {% endcomment %}
+        {% comment %} TODO FIXME create github action to rebuild on the first of each month to automatically refresh {% endcomment %}
+        {% comment %} TODO consider switching to weekly safety tips? {% endcomment %}
+        {% comment %} https://talk.jekyllrb.com/t/display-posts-from-current-month-only/6911/2 {% endcomment %}
+        {% comment %} https://jekyll.one/pages/public/tools/toolbox/jekyll/date_time_formats/ {% endcomment %}
+        
+        {% comment %} {% assign currentMonth = site.time |  date: '%B' %} {% endcomment %}
+        {% comment %} <h3 class="text-left">MONTHLY TIP FOR {{  currentMonth  |  upcase  }}</h3> {% endcomment %}
+        {% comment %} <p>{{  site.data.monthly_tips[currentMonth].tip   }}</p> {% endcomment %}
+        <div class="col-md-3 text-center">
+            Self service fuel-<br/>available 24-7
+            <table class="table text-start">
+            {% for fuel in site.data.fuel %}
+                <tr>
+                    <td>{{ fuel.fuel }}</td>
+                    <td>{{ fuel.price }}</td>
+                </tr>
+            {% endfor %}
+            </table>
+            {% comment %} TODO center table inside div {% endcomment %}
+        </div>
+        <div class="col-md-6">
+            {{ site.data.training }}
+        </div>
+        <div class="col-md-3">
+            Training/Rental Rates
+            <table class="table text-start">
+            {% for plane in site.data.planes %}
+                <tr>
+                    <td>{{ plane.plane }}</td>
+                    <td>{{ plane.rate }}</td>
+                </tr>
+            {% endfor %}
+            </table>
+        </div>
+
+        {% comment %} <div class="col-xl-3 col-lg-3">&nbsp;</div> {% endcomment %}
+
+    </div>
+</div>
+{% comment %} </section> {% endcomment %}

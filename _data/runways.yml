@@ -1,0 +1,23 @@
+- heading: 3 / 21
+  surface: paved
+  dimensions:
+    length: 500
+    width: 44
+  status: Open
+  description: "Pilot controlled lighting on 122.7 Mhz- 5 slow clicks"
+
+- heading: 9 / 27
+  surface: turf
+  dimensions:
+    length: 3400
+    width: 100
+  status: Other/misc
+  description: lighting/pireps/obstructions
+
+- heading: 18 / 36
+  surface: turf
+  dimensions:
+    length: 1600
+    width: 80
+  status: Open
+  description: lighting/pireps/obstructions

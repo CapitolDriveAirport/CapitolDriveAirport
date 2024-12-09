@@ -1,0 +1,19 @@
+{% comment %} <div class="row">
+    <div class="row"> {% endcomment %}
+        <div class="col-6">
+            Phone: {{ site.data.contact.phone }}
+            <br/>
+            <br/>
+            <a href="{{ site.data.contact.address.link }}">
+                {{ site.data.contact.address.street }}
+                <br/>
+                {{ site.data.contact.address.city }}
+            </a>
+        </div>
+        <div class="col-6">
+            {% for link in site.data.contact.links %}
+                <a href="{{ link.url }}">{{ link.name }}</a></br>
+            {% endfor %}
+        </div>
+    {% comment %} </div>
+</div> {% endcomment %}

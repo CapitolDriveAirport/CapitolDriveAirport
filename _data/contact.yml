@@ -1,0 +1,25 @@
+address:
+  street: 21500 Gumina Rd
+  city: Pewaukee, WI 53072
+  link: https://www.google.com/maps/dir/current+location/Capitol+Airport,+21500+Gumina+Rd,+Pewaukee,+WI+53072/
+
+
+phone: 262-781-4213
+
+links:
+  # - name: Current NOTAMS
+  #   url: https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/search/results/?cycle=2411&ident=02c&navaid=
+    # url: https://pilotweb.nas.faa.gov/PilotWeb/notamRetrievalByICAOAction.do?method=displayByICAOs&reportType=RAW&formatType=DOMESTIC&retrieveLocId=02C&actionType=notamRetrievalByICAOs
+  - name: AOPA- 02C
+    url: https://www.aopa.org/destinations/airports/02C/details
+  - name: AOPA- B. Aero LLC
+    url: https://www.aopa.org/destinations/business/23696
+  - name: AirNAV- 02C
+    url: https://www.airnav.com/airport/02c
+  - name: AirNAV- B. Aero LLC
+    url: https://www.airnav.com/airport/02C/BROOKFIELD_AERO
+  # - name: AFD
+  #   url: http://www.theafd.com/facility/02C
+  # - name: VAA Ch. 11
+  #   url: http://vaachapter11.com/
+    

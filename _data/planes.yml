@@ -1,0 +1,8 @@
+- plane: Cessna 150	
+  rate: $82/hr
+- plane: Cherokee 140	
+  rate: $__/hr
+- plane: ATC 710	
+  rate: $__/hr
+- plane: Instructor	
+  rate: $35/hr
