@@ -9,7 +9,7 @@
                     <div class="card-header py-3">
                         <h4 class="my-0 fw-normal">{{  runway.heading  }}</h4>
                     </div>
-                    <div class="card-body pt-2">
+                    <div class="card-body p-2">
                         {% assign thisrunwaystatus = runway.status | downcase %}
                         <div class="p-2 mb-2 rounded-3 text-bg-{% case thisrunwaystatus %}{% when 'open' %}success{% when 'closed' %}danger{% else %}warning{% endcase %}">{{ runway.status }}</div>
                         {% comment %} <h4 class="card-title">{{  runway.heading  }}</h4> {% endcomment %}
