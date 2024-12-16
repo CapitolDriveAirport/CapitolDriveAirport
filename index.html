@@ -1,0 +1,36 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+permalink: /
+title: Homepage
+---
+
+{% include _header.html %}
+
+<div class="container">
+    <div class="row">
+    
+        <div class="col-5 ">
+            {% include _camera_images.html %}
+        </div>
+        <div class="col-7">
+            {% include _runways.html %}
+        
+            <hr>
+        
+            {% include _news.html %}
+            
+            <hr>
+        
+            {% include _training.html %}
+            
+            <hr>
+    
+            {% include _contact.html %}
+        </div>
+        
+    </div>
+</div>    
+
