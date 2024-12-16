@@ -1,6 +1,6 @@
 <div class="container p-0">
-    {% comment %} {% for feed in site.data.camera_feeds %} {% endcomment %}
-    {% for feed in site.data.dummy_cams %}  {% comment %} TODO REMOVE- revert to camera_feeds {% endcomment %}
+    {% comment %} TODO REMOVE- revert to site.data.camera_feeds {% endcomment %}
+    {% for feed in site.data.dummy_cams %}
         <img class="img-fluid" src="{{ feed }}">
     {% endfor %}
 
