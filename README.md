@@ -8,6 +8,7 @@ To Do:
 - [x] impliment runway closings and openings, news, gas prices, and other variables to be pulled from seperate data base
 - [x] closed vs open runways to be highlighted in red
 - [x] change order of pics/info on mobile view
+- [ ] remove dummy camera feeds
 - [ ] add other useful information/remove unimportant information?
 - [ ] update 404 page
 
