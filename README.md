@@ -16,4 +16,4 @@ The current live website can be accessed here:
 http://capitoldriveairport.com
 
 The live test site can be accessed here:
-http://capitoldriveairport.github.io/
+https://capitoldriveairport.github.io/
