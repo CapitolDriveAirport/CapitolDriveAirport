@@ -12,26 +12,13 @@ title: Homepage
 <div class="container">
     <div class="row">
 
-        <div class="col-lg-5 py-1">
+        <div class="col-lg-7 order-lg-2">
+            {% include _body.html %}
+        </div>
+        
+        <div class="col-lg-5 order-lg-1">
             {% include _camera_images.html %}
         </div>
 
-        <div class="col-lg-7 py-1">
-            {% include _runways.html %}
-        
-            <hr>
-        
-            {% include _news.html %}
-            
-            <hr>
-        
-            {% include _training.html %}
-            
-            <hr>
-    
-            {% include _contact.html %}
-        </div>
-        
     </div>
 </div>    
-

@@ -7,9 +7,9 @@ To Do:
 - [x] improve fonts, colors, and overall look
 - [x] impliment runway closings and openings, news, gas prices, and other variables to be pulled from seperate data base
 - [x] closed vs open runways to be highlighted in red
+- [x] change order of pics/info on mobile view
 - [ ] add other useful information/remove unimportant information?
 - [ ] update 404 page
-- [ ] change order of pics/info on mobile view
 
 
 The current live website can be accessed here:

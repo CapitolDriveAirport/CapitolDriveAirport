@@ -1,6 +1,6 @@
-<div class="row">
+<div class="container">
     <div class="row">
-        <div class="col-6">
+        <div class="col-6 ps-4">
             Phone: {{ site.data.contact.phone }}
             <br>
             <br>
@@ -10,7 +10,7 @@
                 {{ site.data.contact.address.city }}
             </a>
         </div>
-        <div class="col-6">
+        <div class="col-6 ps-4">
             {% for link in site.data.contact.links %}
                 <a href="{{ link.url }}">{{ link.name }}</a></br>
             {% endfor %}
