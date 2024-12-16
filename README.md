@@ -17,5 +17,3 @@ http://capitoldriveairport.com
 
 The live test site can be accessed here:
 http://capitoldriveairport.github.io/
-~~http://capitoldriveairport.github.io/CapitolDriveAirport/~~ 
-
